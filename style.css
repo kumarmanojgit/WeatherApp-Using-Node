@@ -115,4 +115,58 @@ html,body{
   text-align: center;
   font-size: 30px;
 }
+.minmax{
+  text-align: center;
+  margin-top: 3px;
+  font-weight: 300;
+  font-size: 12px;
+  color: rgb(57, 46, 46);
+}
+.weathercon{
+  height: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.weather .fas{
+  font-size: 60px;
+  animation: fas-anime linear infinite alternate;
+}
+@keyframes fas-anime {
+  form{
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1.6);
+  }
+}
+@media( max-width:600px){
+  .box{
+    width: 90%;
+    height: 80%;
+  }
+  .wave{
+    top:85%;
+  }
+  .weathercon{
+    font-size: 50px;
+  }
+  .info{
+    font-size: 15px;
+  }
+}
+@media (max-height){
+  .box{
+    height: 80%;
+  }
+  .wave{
+    top:115%;
+  }
+}
+body>span{
+  width: 100%;
+  text-align: center;
+  color: grey;
+}
 
